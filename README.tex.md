@@ -55,7 +55,7 @@ Donde el $1/2$ es para considerar el energy-conserving. Si se considera que $T \
 \textbf{Dinamica de Glauber en una dimensión}
 \end{center}
 
-En una dimensión, considerando que $J_{ij}=J\delta_{ij}$ (ver eq(\ref{lulo})), se tiene la siguiente tasa de transición:
+En una dimensión, considerando que $J_{ij}=J\delta_{ij}$, se tiene la siguiente tasa de transición:
 
 \begin{equation}
 \omega_{i}(s)=\frac{1}{2}\bigl(1-s_{i} \gamma \frac{s_{i+1}+s_{i-1}}{2}\bigr)
