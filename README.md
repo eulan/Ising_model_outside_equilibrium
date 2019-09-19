@@ -1,4 +1,4 @@
-#Modelo de Ising-Gauber
+\section{Modelo de Ising-Gauber}
 
 El modelo de Ising es probablemente el modelo más estudiado en mecánica estadística, en gran medida por su simplicidad y su utilidad en la comprensión de las transiciones de fase así como también por su gran rango de aplicación. En el modelo clásico de Ising, espines que existen en sitios de la red regular tienen dos posibles valores <img src="/tex/ac79f544ac468d9cd8eb78cb27613b1a.svg?invert_in_darkmode&sanitize=true" align=middle width=50.62775354999999pt height=21.18721440000001pt/>. El Hamiltoniano del sistema es el siguiente:
 
