@@ -1,4 +1,6 @@
-\section{Modelo de Ising-Gauber}
+\begin{center}
+\textbf{\large Modelo de Ising-Gauber}
+\end{center}
 
 El modelo de Ising es probablemente el modelo más estudiado en mecánica estadística, en gran medida por su simplicidad y su utilidad en la comprensión de las transiciones de fase así como también por su gran rango de aplicación. En el modelo clásico de Ising, espines que existen en sitios de la red regular tienen dos posibles valores $s=\pm 1$. El Hamiltoniano del sistema es el siguiente:
 
@@ -48,3 +50,64 @@ Donde la suma es sobre los primeros vecinos al espin $i$ y la rata de la transic
 \end{equation}
 
 Donde el $1/2$ es para considerar el energy-conserving. Si se considera que $T \rightarrow \infty$, se puede ver facílmente que la rata de transición de los estados es $1/2$ e implica que es igualmente probable tener espines con $s=1$ y $s=-1$ , lo que conlleva a una magnetización nula. A temperaturas altas las fluctuaciones térmicas son privilegiadas sobre las interacciones locales aleatorizando el sistema.
+
+
+\begin{center}
+\textbf{Functiones de Correlación}
+\end{center}
+
+En principio, se puede utilizar la ecuación maestra y calcular la distribución de probabilidad $P_{i}(t)$ en el tiempo, para luego obtener las funciones de correlación $S_{i,j,k,...}=\langle s_{i}s_{j}s_{k}...\rangle$, donde $\langle f(s_{i}) \rangle = \sum_{i} P(s_{i},t)$. Sin embargo, este proceso es muy complicado y propenso al error en t\'erminos de los metódos númericos. Por eso se va a utilizar una alternativa más simple, tratando sobre las variables de estado de espínes, se hará en primer lugar para $\langle s_{i} \rangle$ y luego se generalizará: 
+
+\begin{equation}
+s_{i}(t+\delta t) = \left\lbrace
+\begin{array}{ll}
+ s_{i}(t) & \textup{con una probabilidad: } 1-\omega_{i}(s)\delta t\\
+ -s_{i}(t) & \textup{con una probabilidad: } \omega_{i}(s) \delta t
+\end{array}
+\right.
+\end{equation}
+
+Por ello se tiene:
+
+\begin{equation}
+s_{i}(t+\delta t) = s_{i}(t) (1-\omega_{i}(s)\delta t) - s_{i}(t) \omega_{i}(s) \delta t
+\end{equation}    
+
+Reduciendo al límite continuo, se tiene:
+
+\begin{equation}
+\frac{ds_{i}}{dt}= -2s_{i}\omega_{i}(s)
+\end{equation}
+
+Luego aplicando promedio se tiene:
+
+\begin{equation}
+\frac{dS_{i}}{dt}= -2 \langle s_{i}\omega_{i}(s) \rangle
+\end{equation}
+
+Analógamente, se tiene para $S_{i,j}$:
+
+\begin{equation}
+\frac{dS_{i,j}}{dt}= -2 \langle s_{i} s_{j}(\omega_{i}+\omega_{j})(s) \rangle
+\end{equation}
+
+También, se puede generalizar y tener la función de correlación para $n$ espines:
+
+\begin{equation}
+\prod_{n=1}^{m} s_{i_{n}}(t+\delta t) = \left\lbrace
+\begin{array}{ll}
+ \prod_{n=1}^{m} s_{i_{n}}(t) & \textup{con: } 1-\sum_{n=1}^{m}\omega_{i_{n}}(s)\delta t\\
+ - \prod_{n=1}^{m} s_{i_{n}}(t) & \textup{con: } \sum_{n=1}^{m}\omega_{i_{n}}(s) \delta t
+\end{array}
+\right.
+\end{equation}
+
+Reduciendose al límite continuo, se tiene:
+
+\begin{equation}
+\frac{dS_{i_{1},i_{2},...,i_{m}}}{dt}= -2\langle \prod_{n=1}^{m} s_{i_{n}} \sum_{n=1}^{m} \omega_{i_{n}}(s) \rangle
+\end{equation}
+
+Finalmente, se demostró las  ecuaciones que describen las dinámica del sistema en función del tiempo. Sin necesidad de recurrir directamente a la ecuación maestra.
+
+
