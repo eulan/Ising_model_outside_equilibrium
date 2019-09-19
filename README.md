@@ -123,11 +123,11 @@ Esto se puede expresar como:
 
 <p align="center"><img src="/tex/053cb9411b39ef765d3c98d5bc6e3488.svg?invert_in_darkmode&sanitize=true" align=middle width=527.50394235pt height=32.990165999999995pt/></p>
 
-Así para determinar de tripletes es necesario conocer la función de correlación de 4-espines \cite{Dni}. Esta relación no es trivial, la solución más natural se presenta en la condición <img src="/tex/6ffc6984e992370cb17dd3ef6670ff7c.svg?invert_in_darkmode&sanitize=true" align=middle width=51.94440074999999pt height=21.18721440000001pt/> y se obtiene:
+Así para determinar de tripletes es necesario conocer la función de correlación de 4-espines. Esta relación no es trivial, la solución más natural se presenta en la condición <img src="/tex/6ffc6984e992370cb17dd3ef6670ff7c.svg?invert_in_darkmode&sanitize=true" align=middle width=51.94440074999999pt height=21.18721440000001pt/> y se obtiene:
 
 <p align="center"><img src="/tex/940a05239847d906ab511bf947fa0eaa.svg?invert_in_darkmode&sanitize=true" align=middle width=484.82193209999997pt height=18.312383099999998pt/></p> 
 
-Combinando este resultados con el anterior, usando <img src="/tex/243ff7a534430724ea3bec1ed658c741.svg?invert_in_darkmode&sanitize=true" align=middle width=20.190673799999992pt height=22.465723500000017pt/> y considerando el comportamiento asintotico (ver fig(\ref{Grho3})), se obtiene:
+Combinando este resultados con el anterior, usando <img src="/tex/243ff7a534430724ea3bec1ed658c741.svg?invert_in_darkmode&sanitize=true" align=middle width=20.190673799999992pt height=22.465723500000017pt/> y considerando el comportamiento asintotico, se obtiene:
 
 <p align="center"><img src="/tex/02e8ced05ee0a34e7befc7fa548144eb.svg?invert_in_darkmode&sanitize=true" align=middle width=386.7499911pt height=32.990165999999995pt/></p>
 
