@@ -30,6 +30,17 @@ Donde la suma es sobre los primeros vecinos al espin <img src="/tex/77a3b857d53f
 
 Donde el <img src="/tex/d5d5564ce0bb9999695f32da6ba7af42.svg?invert_in_darkmode&sanitize=true" align=middle width=24.657628049999992pt height=24.65753399999998pt/> es para considerar el energy-conserving. Si se considera que <img src="/tex/fd7c45eb2515ec78286f8d1b68e23a10.svg?invert_in_darkmode&sanitize=true" align=middle width=53.89831424999999pt height=22.465723500000017pt/>, se puede ver facílmente que la rata de transición de los estados es <img src="/tex/d5d5564ce0bb9999695f32da6ba7af42.svg?invert_in_darkmode&sanitize=true" align=middle width=24.657628049999992pt height=24.65753399999998pt/> e implica que es igualmente probable tener espines con <img src="/tex/776f93672423b6ad1b8808ea2f124452.svg?invert_in_darkmode&sanitize=true" align=middle width=37.84231934999999pt height=21.18721440000001pt/> y <img src="/tex/2619dc6a3f542ae9c31fe0cefed846f1.svg?invert_in_darkmode&sanitize=true" align=middle width=50.62775354999999pt height=21.18721440000001pt/> , lo que conlleva a una magnetización nula. A temperaturas altas las fluctuaciones térmicas son privilegiadas sobre las interacciones locales aleatorizando el sistema.
 
+<p align="center"><img src="/tex/f2a5ed00452954d4274ab4cba859a9d9.svg?invert_in_darkmode&sanitize=true" align=middle width=328.68778304999995pt height=11.4155283pt/></p>
+
+En una dimensión, considerando que <img src="/tex/2191e475925d75b13568d4ea96ae24a1.svg?invert_in_darkmode&sanitize=true" align=middle width=71.36790869999999pt height=22.831056599999986pt/> (ver eq(\ref{lulo})), se tiene la siguiente tasa de transición:
+
+<p align="center"><img src="/tex/4971d99eab2ad19e5f4e30c6c9883653.svg?invert_in_darkmode&sanitize=true" align=middle width=460.19815875pt height=32.990165999999995pt/></p>
+
+Con <img src="/tex/d08f81a1fd370490ee1b0ad2f1936a07.svg?invert_in_darkmode&sanitize=true" align=middle width=106.08483104999999pt height=24.65753399999998pt/>. A pesar de que la tasa de Glauber es compatible con la condición de balance detallado, no es la rata de transición más general posible, pero es la única rata que soluciona el modelo de Ising. Sin embargo, cumple las siguientes propiedades de estructura:
+
+<p align="center"><img src="/tex/3e82001febb9bb08e28745f765c79c82.svg?invert_in_darkmode&sanitize=true" align=middle width=675.61704705pt height=119.81735864999999pt/></p>
+
+Por lo general, se trabajará siempre con la rata de Glauber, sin ninguna restricción.
 
 <p align="center"><img src="/tex/ed51ffdb1fb53035dd8f724397e4acb4.svg?invert_in_darkmode&sanitize=true" align=middle width=208.2090087pt height=11.4155283pt/></p>
 
@@ -95,6 +106,33 @@ y con una magnetización inicial <img src="/tex/fd9461a2135ca0ed5af7d494c65252b7
 En conclusión, la forma de la densidad de barreras de dominios es independiente de la magnetización inicial y en temperatura cero, la dinámica de las barreras de dominios coinciden con la de un sistema de reacción-difusión sujeto a una reacción de aniquilación: <img src="/tex/3b4410c0e0d21ba84b229ecc2302c33a.svg?invert_in_darkmode&sanitize=true" align=middle width=78.53859749999998pt height=22.465723500000017pt/>.
 
 <p align="center"><img src="/tex/24f834305c63fa68c286e4c7fc54f5fe.svg?invert_in_darkmode&sanitize=true" align=middle width=286.65839895pt height=14.611878599999999pt/></p>
+
+Se puede expandir el analísis de las paredes de dominio calculando la probabilidad de que se tengan dos paredes dominios consecutivos. Los pares <img src="/tex/24e6eeae74f33fe17ac316d45b6de731.svg?invert_in_darkmode&sanitize=true" align=middle width=66.55244144999999pt height=24.65753399999998pt/> y <img src="/tex/6e32e88434a5681bd004ab500233b744.svg?invert_in_darkmode&sanitize=true" align=middle width=66.55244144999999pt height=24.65753399999998pt/> se encuentran si <img src="/tex/1682f23c4004024f702f8cd46f4199d1.svg?invert_in_darkmode&sanitize=true" align=middle width=217.4977926pt height=27.77565449999998pt/>. Así las densidad de dobletes es:
+
+<p align="center"><img src="/tex/385c299787c27482d2354810c4bb9713.svg?invert_in_darkmode&sanitize=true" align=middle width=476.8613586pt height=79.0179555pt/></p>
+
+Calculado <img src="/tex/b598a01b0b2876cf6751005227ef9149.svg?invert_in_darkmode&sanitize=true" align=middle width=19.477190699999987pt height=22.465723500000017pt/> y <img src="/tex/82588ea8e81c6c10208fabda9d31b846.svg?invert_in_darkmode&sanitize=true" align=middle width=19.477190699999987pt height=22.465723500000017pt/>, por medio de <img src="/tex/243ff7a534430724ea3bec1ed658c741.svg?invert_in_darkmode&sanitize=true" align=middle width=20.190673799999992pt height=22.465723500000017pt/> calculado anterior mente para magnetización inicial nula, la densidad de dobletes es:
+
+<p align="center"><img src="/tex/762cbad558b052bca13648e2f1738704.svg?invert_in_darkmode&sanitize=true" align=middle width=444.37616685pt height=76.56729134999999pt/></p>
+
+Análogamente, se tiene para la densidad de tripletes:
+
+<p align="center"><img src="/tex/cc22a1ae31c37eb9991836f39bbf1eca.svg?invert_in_darkmode&sanitize=true" align=middle width=529.84658925pt height=39.452455349999994pt/></p>
+
+Esto se puede expresar como:
+
+<p align="center"><img src="/tex/053cb9411b39ef765d3c98d5bc6e3488.svg?invert_in_darkmode&sanitize=true" align=middle width=527.50394235pt height=32.990165999999995pt/></p>
+
+Así para determinar de tripletes es necesario conocer la función de correlación de 4-espines \cite{Dni}. Esta relación no es trivial, la solución más natural se presenta en la condición <img src="/tex/6ffc6984e992370cb17dd3ef6670ff7c.svg?invert_in_darkmode&sanitize=true" align=middle width=51.94440074999999pt height=21.18721440000001pt/> y se obtiene:
+
+<p align="center"><img src="/tex/940a05239847d906ab511bf947fa0eaa.svg?invert_in_darkmode&sanitize=true" align=middle width=484.82193209999997pt height=18.312383099999998pt/></p> 
+
+Combinando este resultados con el anterior, usando <img src="/tex/243ff7a534430724ea3bec1ed658c741.svg?invert_in_darkmode&sanitize=true" align=middle width=20.190673799999992pt height=22.465723500000017pt/> y considerando el comportamiento asintotico (ver fig(\ref{Grho3})), se obtiene:
+
+<p align="center"><img src="/tex/02e8ced05ee0a34e7befc7fa548144eb.svg?invert_in_darkmode&sanitize=true" align=middle width=386.7499911pt height=32.990165999999995pt/></p>
+
+Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
+
 
 
 
