@@ -32,7 +32,7 @@ Donde el <img src="/tex/d5d5564ce0bb9999695f32da6ba7af42.svg?invert_in_darkmode&
 
 <p align="center"><img src="/tex/f2a5ed00452954d4274ab4cba859a9d9.svg?invert_in_darkmode&sanitize=true" align=middle width=328.68778304999995pt height=11.4155283pt/></p>
 
-En una dimensión, considerando que <img src="/tex/2191e475925d75b13568d4ea96ae24a1.svg?invert_in_darkmode&sanitize=true" align=middle width=71.36790869999999pt height=22.831056599999986pt/> (ver eq(\ref{lulo})), se tiene la siguiente tasa de transición:
+En una dimensión, considerando que <img src="/tex/2191e475925d75b13568d4ea96ae24a1.svg?invert_in_darkmode&sanitize=true" align=middle width=71.36790869999999pt height=22.831056599999986pt/>, se tiene la siguiente tasa de transición:
 
 <p align="center"><img src="/tex/4971d99eab2ad19e5f4e30c6c9883653.svg?invert_in_darkmode&sanitize=true" align=middle width=460.19815875pt height=32.990165999999995pt/></p>
 
