@@ -133,7 +133,7 @@ Combinando este resultados con el anterior, usando <img src="/tex/243ff7a5344307
 
 Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
 
-<p align="center"><img src="https://github.com/eulan/Ising_model_outside_equilibrium/blob/master/result%20(1).jpg" align=middle width=400pt height=200pt/></p>
+<p align="center"><img src="https://github.com/eulan/Ising_model_outside_equilibrium/blob/master/result%20(1).jpg" align=middle width=600pt height=300pt/></p>
 
 Resultados, descripción gráfica donde Deep Learning (DL), Kinetic Monte Carlo (KMC) y los modelos recientemente deducidos. 
 
