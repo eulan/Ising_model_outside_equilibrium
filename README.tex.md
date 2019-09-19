@@ -51,6 +51,25 @@ Donde la suma es sobre los primeros vecinos al espin $i$ y la rata de la transic
 
 Donde el $1/2$ es para considerar el energy-conserving. Si se considera que $T \rightarrow \infty$, se puede ver facílmente que la rata de transición de los estados es $1/2$ e implica que es igualmente probable tener espines con $s=1$ y $s=-1$ , lo que conlleva a una magnetización nula. A temperaturas altas las fluctuaciones térmicas son privilegiadas sobre las interacciones locales aleatorizando el sistema.
 
+\begin{center}
+\textbf{Dinamica de Glauber en una dimensión}
+\end{center}
+
+En una dimensión, considerando que $J_{ij}=J\delta_{ij}$ (ver eq(\ref{lulo})), se tiene la siguiente tasa de transición:
+
+\begin{equation}
+\omega_{i}(s)=\frac{1}{2}\bigl(1-s_{i} \gamma \frac{s_{i+1}+s_{i-1}}{2}\bigr)
+\end{equation}
+
+Con $\gamma=\tanh(2\beta J)$. A pesar de que la tasa de Glauber es compatible con la condición de balance detallado, no es la rata de transición más general posible, pero es la única rata que soluciona el modelo de Ising. Sin embargo, cumple las siguientes propiedades de estructura:
+
+\begin{itemize}
+\item Localidad: Debido a que el Hamiltoniano considera interacción, la rata de transición debe hacerlo también $\omega(s)=\omega(s_{i},s_{i+1},s_{i-1})$.
+\item Simetría traslacional: la rata es invariante bajo $i-1 \longleftrightarrow i+1$.
+\item Simetría up/down: Inversión sobre los giros, es una propiedad que se observa en el hamiltoniano. Esto no es válido cuando hay campos externos.
+\end{itemize}
+
+Por lo general, se trabajará siempre con la rata de Glauber, sin ninguna restricción.
 
 \begin{center}
 \textbf{Funciones de Correlación}
@@ -161,6 +180,51 @@ En conclusión, la forma de la densidad de barreras de dominios es independiente
 \begin{center}
 \textbf{Multipletes de paredes de dominio}
 \end{center}
+
+Se puede expandir el analísis de las paredes de dominio calculando la probabilidad de que se tengan dos paredes dominios consecutivos. Los pares $(k-1,k)$ y $(k,k+1)$ se encuentran si $\frac{1}{4} (1-s_{k-1}s_{k})(1-s_{k}s_{k+1})=1$. Así las densidad de dobletes es:
+
+\begin{equation}
+\begin{split}
+\rho_{2} &=\left\langle \frac{1}{4} (1-s_{k-1}s_{k})(1-s_{k}s_{k+1})\right\rangle \\
+&=\frac{1}{4} (1-2G_{1}+G_{2})
+\end{split}
+\end{equation}
+
+Calculado $G_{1}$ y $G_{2}$, por medio de $G_{k}$ calculado anterior mente para magnetización inicial nula, la densidad de dobletes es:
+
+\begin{equation}
+\begin{split}
+\rho_{2} &= \frac{1}{4} [I_{0}-I_{2}](2t) \\
+&=\frac{1}{4t} e^{2t} I_{1}(2t) \sim \frac{1}{8 \sqrt{\pi t^{3}}}
+\end{split}
+\end{equation}
+
+Análogamente, se tiene para la densidad de tripletes:
+
+\begin{equation}
+\rho_{3}=\left\langle \frac{1}{8} (1-s_{k-1}s_{k}) (1-s_{k}s_{k+1}) (1-s_{k+1}s_{k+2})\right\rangle
+\end{equation}
+
+Esto se puede expresar como:
+
+\begin{equation}
+\rho_{3}= \frac{1}{4}(1-4G_{1}+2G_{2}-G_{3}+\langle s_{k-1}s_{k}s_{k+1}s_{k+2}\rangle)
+\end{equation}
+
+Así para determinar de tripletes es necesario conocer la función de correlación de 4-espines \cite{Dni}. Esta relación no es trivial, la solución más natural se presenta en la condición $m_{0}=0$ y se obtiene:
+
+\begin{equation}
+\langle s_{k-1}s_{k}s_{k+1}s_{k+1} \rangle=G_{1}^{2}+G_{1}G_{3}-G_{2}^{2}
+\end{equation} 
+
+Combinando este resultados con el anterior, usando $G_{k}$ y considerando el comportamiento asintotico (ver fig(\ref{Grho3})), se obtiene:
+
+\begin{equation}
+\rho_{3} \sim \frac{1}{8\pi t^{3} }
+\end{equation}
+
+Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
+
 
 
 
