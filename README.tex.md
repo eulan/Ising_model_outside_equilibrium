@@ -211,13 +211,13 @@ Esto se puede expresar como:
 \rho_{3}= \frac{1}{4}(1-4G_{1}+2G_{2}-G_{3}+\langle s_{k-1}s_{k}s_{k+1}s_{k+2}\rangle)
 \end{equation}
 
-Así para determinar de tripletes es necesario conocer la función de correlación de 4-espines \cite{Dni}. Esta relación no es trivial, la solución más natural se presenta en la condición $m_{0}=0$ y se obtiene:
+Así para determinar de tripletes es necesario conocer la función de correlación de 4-espines. Esta relación no es trivial, la solución más natural se presenta en la condición $m_{0}=0$ y se obtiene:
 
 \begin{equation}
 \langle s_{k-1}s_{k}s_{k+1}s_{k+1} \rangle=G_{1}^{2}+G_{1}G_{3}-G_{2}^{2}
 \end{equation} 
 
-Combinando este resultados con el anterior, usando $G_{k}$ y considerando el comportamiento asintotico (ver fig(\ref{Grho3})), se obtiene:
+Combinando este resultados con el anterior, usando $G_{k}$ y considerando el comportamiento asintotico, se obtiene:
 
 \begin{equation}
 \rho_{3} \sim \frac{1}{8\pi t^{3} }
