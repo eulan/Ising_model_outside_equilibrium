@@ -1,5 +1,5 @@
 \begin{center}
-\textbf{\large Modelo de Ising-Gauber}
+\textbf{\large Modelo de Ising-Gauber en 1D}
 \end{center}
 
 El modelo de Ising es probablemente el modelo más estudiado en mecánica estadística, en gran medida por su simplicidad y su utilidad en la comprensión de las transiciones de fase así como también por su gran rango de aplicación. En el modelo clásico de Ising, espines que existen en sitios de la red regular tienen dos posibles valores $s=\pm 1$. El Hamiltoniano del sistema es el siguiente:
@@ -53,7 +53,7 @@ Donde el $1/2$ es para considerar el energy-conserving. Si se considera que $T \
 
 
 \begin{center}
-\textbf{Functiones de Correlación}
+\textbf{Funciones de Correlación}
 \end{center}
 
 En principio, se puede utilizar la ecuación maestra y calcular la distribución de probabilidad $P_{i}(t)$ en el tiempo, para luego obtener las funciones de correlación $S_{i,j,k,...}=\langle s_{i}s_{j}s_{k}...\rangle$, donde $\langle f(s_{i}) \rangle = \sum_{i} P(s_{i},t)$. Sin embargo, este proceso es muy complicado y propenso al error en t\'erminos de los metódos númericos. Por eso se va a utilizar una alternativa más simple, tratando sobre las variables de estado de espínes, se hará en primer lugar para $\langle s_{i} \rangle$ y luego se generalizará: 
@@ -109,5 +109,62 @@ Reduciendose al límite continuo, se tiene:
 \end{equation}
 
 Finalmente, se demostró las  ecuaciones que describen las dinámica del sistema en función del tiempo. Sin necesidad de recurrir directamente a la ecuación maestra.
+
+
+\begin{center}
+\textbf{Obtención de los observables}
+\end{center}
+
+Basados en el calculos anterior se puede mostrar que en la magnetización cumple el sigueinte comportamiento:
+
+\begin{equation}
+\frac{dS_{j}}{dt}=-S_{j}+\frac{\gamma}{2}(S_{j-1}+S_{j+1})
+\end{equation}
+
+\begin{equation}
+S_{k}= e^{-t}I_{k}(\gamma t)
+\end{equation}
+
+Donde $I_{k}$ es la función de Bessel de segunda especie de orden $j$ \cite{Abra}.  Para $T>0$, el espín promedio decae asintóticamente de la forma $S_{j}(t) \sim (2 \pi \gamma t)^{-1/2} e^{-(1-\gamma)t}$, con un tiempo de relajación $\tau=(1-\gamma)^{-1}$ (cuando la temperatura es nula, el tiempo de decaimiento es infinito). La magnetización $m=N\sum_{j}S_{j}$, satiface $dm/dt=-(1-\gamma)m$, donde $m$ decae exponencialmente:
+
+\begin{equation}
+m(t)=m(0)e^{-(1-\gamma)t}
+\end{equation}  
+
+Ahora, es de interes estudiar la función de correlación de pares $S_{i,j}$. La correlación entre vecinos es muy importante por su interpretación geométrica en términos de paredes de dominios. Se va considerar que dos espines antiparalelos forman una pared de dominio o cuasi-partícula. Por tanto, se puede asumir que (k,k+1) es una pared de dominio si $\frac{1}{2} (1- s_{k} s_{k+1})=1$. Así, la densidad de paredes de dominios queda dada por:
+
+\begin{equation}
+\rho = \langle \frac{1}{2} (1-s_{k}s_{k+1})\rangle = \frac{1}{2} (1-G_{1})
+\end{equation} 
+
+Por invarianza frente a traslaciones, la función de correlación, $G_{k}$, debe depender sólo de la separación entre dos espines $G_{k}=S_{i,i+k}$, por tanto la ecuación maestra toma la forma:
+
+\begin{equation}
+\frac{dG_{k}}{dt}=-2G_{k}+\gamma (G_{k-1}+G_{k+1})
+\label{dG}
+\end{equation}
+
+Para $k>0$, se tiene la condición de frontera $G_{0}= \langle s_{1}^{2} \rangle=1$. Se puede mostrar que para el caso diamagnetico, y antiferromagnetico, se tiene después de algunos calculos que la densidad de primeros vecinos cumple:
+
+\begin{equation}
+\rho \sim (4 \pi t) ^{-1/2} 
+\end{equation}
+
+y con una magnetización inicial $m_{0}$:
+
+\begin{equation}
+\rho \sim (4 \pi t) ^{-1/2} (1-m_{0})^{2}
+\end{equation}
+
+En conclusión, la forma de la densidad de barreras de dominios es independiente de la magnetización inicial y en temperatura cero, la dinámica de las barreras de dominios coinciden con la de un sistema de reacción-difusión sujeto a una reacción de aniquilación: $A + A \rightarrow 0$.
+
+\begin{center}
+\textbf{Multipletes de paredes de dominio}
+\end{center}
+
+
+
+
+
 
 
