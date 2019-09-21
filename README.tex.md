@@ -1,3 +1,8 @@
+\usepackage{tikz}
+\usepackage{verbatim}
+\usepackage{ifthen}
+
+
 \begin{center}
 \textbf{\large Modelo de Ising-Gauber en 1D}
 \end{center}
@@ -228,6 +233,63 @@ Combinando este resultados con el anterior, usando $G_{k}$ y considerando el com
 \end{center}
 
 Se va a contruir modelo con una red neuronal que modele las densidades de dominios y la magnetización.
+
+\def\layersep{2.5cm}
+\def\layerter{5cm}
+\def\layerfour{7.5cm}
+
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron 1}=[neuron, fill=blue!50]
+    \tikzstyle{hidden neuron 2}=[neuron, fill=yellow!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+
+    % Draw the input layer nodes
+    \foreach \name / \y in {1,...,5}
+    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+        \node[input neuron, pin=left:side \y] (I-\name) at (0,-\y) {\ifthenelse{\isodd{\name}}{1}{-1}};
+
+    % Draw the hidden layer nodes
+    \foreach \name / \y in {1,...,6}
+        \path[yshift=0.5cm]
+            node[hidden neuron 1] (H1-\name) at (\layersep,-\y cm) {};
+
+ % Draw the hidden layer nodes
+    \foreach \name / \y in {1,...,6}
+        \path[yshift=0.5cm]
+            node[hidden neuron 2] (H2-\name) at (\layerter,-\y cm) {};
+
+    % Draw the output layer node
+	\node[output neuron] (O-1) at (\layerfour,-1.5) {$m$};
+	\node[output neuron] (O-2) at (\layerfour,-2.5) {$\rho_{1}$};
+	\node[output neuron] (O-3) at (\layerfour,-3.5) {$\rho_{2}$};
+	\node[output neuron] (O-4) at (\layerfour,-4.5) {$\rho_{3}$};
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,5}
+        \foreach \dest in {1,...,6}
+            \path (I-\source) edge (H1-\dest);
+
+    \foreach \source in {1,...,6}
+        \foreach \dest in {1,...,6}
+            \path (H1-\source) edge (H2-\dest);
+
+    % Connect every node in the hidden layer with the output layer
+    \foreach \source in {1,...,6}
+	 \foreach \dest in {1,...,4}
+	       \path (H2-\source) edge (O-\dest);
+
+    % Annotate the layers
+    \node[annot,above of=H1-1, node distance=1cm] (hl) {Hidden layer 1};
+    \node[annot,above of=H2-1, node distance=1cm] (hl2) {Hidden layer 2};
+    \node[annot,left of=hl] {Input layer};
+    \node[annot,right of=hl2] {Output layer};
+\end{tikzpicture}
+
 
 Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
 
