@@ -135,8 +135,6 @@ Combinando este resultados con el anterior, usando <img src="/tex/243ff7a5344307
 
 Se va a contruir modelo con una red neuronal que modele las densidades de dominios y la magnetización.
 
-<p align="center"><img src="/tex/6f285f722b3c7ce2bca680ef1ec640ba.svg" align=middle width=894.066558pt height=193.97260244999998pt/></p>
-
 Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
 
 
