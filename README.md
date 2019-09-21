@@ -133,9 +133,13 @@ Combinando este resultados con el anterior, usando <img src="/tex/243ff7a5344307
 
 <p align="center"><img src="/tex/108190c629d67b5874643ab2b63b3175.svg?invert_in_darkmode&sanitize=true" align=middle width=96.5520468pt height=14.611878599999999pt/></p>
 
-Se va a contruir modelo con una red neuronal que modele las densidades de dominios y la magnetización.
+Se va a contruir modelo con una red neuronal que modele las densidades de correlaciones y la magnetización.
 
 Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
+
+<p align="center"><img src="/tex/b61b01e03ef0d0cfc41cc55e716b193b.svg?invert_in_darkmode&sanitize=true" align=middle width=90.00408285pt height=11.4155283pt/></p>
+
+Se modelo, desde el punto de vista teórico y computacional desde Deep Learning, utilizando una red neuronal de N inputs, 2*N hidden layers, 2*N hidden layer y 4 outputs. Donde el input sería la posición de los espines en cada sitio, en un arreglo unidimensional, y los output serían la magnetización, y las correlaciones recientemente calculadas. Como se podía ver en la gráfica anterior.
 
 
 
