@@ -141,6 +141,9 @@ Finalmente, el objetivo de todo este proyecto es recrear estos resultados numeri
 
 <p align="center"><img src="/tex/b61b01e03ef0d0cfc41cc55e716b193b.svg?invert_in_darkmode&sanitize=true" align=middle width=90.00408285pt height=11.4155283pt/></p>
 
+<p align="center"><img src="https://github.com/eulan/Ising_model_outside_equilibrium/blob/master/result%20(1).jpg" align=middle width=700pt height=500pt/></p>
+
+
 Se modelo, desde el punto de vista teórico y computacional desde Deep Learning, utilizando una red neuronal de N inputs, 2*N hidden layers, 2*N hidden layer y 4 outputs. Donde el input sería la posición de los espines en cada sitio, en un arreglo unidimensional, y los output serían la magnetización, y las correlaciones recientemente calculadas. Como se podía ver en la gráfica anterior.
 
 
