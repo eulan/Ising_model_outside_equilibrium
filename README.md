@@ -135,6 +135,8 @@ Combinando este resultados con el anterior, usando <img src="/tex/243ff7a5344307
 
 Se va a contruir modelo con una red neuronal que modele las densidades de correlaciones y la magnetización.
 
+<p align="center"><img src="https://github.com/eulan/Ising_model_outside_equilibrium/blob/master/neural-network_page-0001.jpg" align=middle width=500pt height=300pt/></p>
+
 Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
 
 <p align="center"><img src="/tex/b61b01e03ef0d0cfc41cc55e716b193b.svg?invert_in_darkmode&sanitize=true" align=middle width=90.00408285pt height=11.4155283pt/></p>
