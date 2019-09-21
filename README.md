@@ -1,8 +1,3 @@
-\usepackage{tikz}
-\usepackage{verbatim}
-\usepackage{ifthen}
-
-
 <p align="center"><img src="/tex/ab92974684d1d0c64e57df27c67d32ad.svg?invert_in_darkmode&sanitize=true" align=middle width=301.77866895pt height=17.5342167pt/></p>
 
 El modelo de Ising es probablemente el modelo más estudiado en mecánica estadística, en gran medida por su simplicidad y su utilidad en la comprensión de las transiciones de fase así como también por su gran rango de aplicación. En el modelo clásico de Ising, espines que existen en sitios de la red regular tienen dos posibles valores <img src="/tex/ac79f544ac468d9cd8eb78cb27613b1a.svg?invert_in_darkmode&sanitize=true" align=middle width=50.62775354999999pt height=21.18721440000001pt/>. El Hamiltoniano del sistema es el siguiente:
@@ -139,13 +134,6 @@ Combinando este resultados con el anterior, usando <img src="/tex/243ff7a5344307
 <p align="center"><img src="/tex/108190c629d67b5874643ab2b63b3175.svg?invert_in_darkmode&sanitize=true" align=middle width=96.5520468pt height=14.611878599999999pt/></p>
 
 Se va a contruir modelo con una red neuronal que modele las densidades de dominios y la magnetización.
-
-\def\layersep{2.5cm}
-\def\layerter{5cm}
-\def\layerfour{7.5cm}
-
-<p align="center"><img src="/tex/b9b9d75ce726586129d657506fc04a71.svg" align=middle width=894.066558pt height=291.6895014pt/></p>
-
 
 Finalmente, el objetivo de todo este proyecto es recrear estos resultados numericamente con Monte Carlo Cinético (KMC) y luego contruir una red neuronal que sea capaz de basado en los calculos de KMC obtener las densidades de dominios, y la magnetización. ¡Entonces, vamos allá!
 
